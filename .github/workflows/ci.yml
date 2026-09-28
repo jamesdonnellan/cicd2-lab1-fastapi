@@ -22,3 +22,7 @@ jobs:
       
       - name: Run tests 
         run: python -m pytest
+
+      - name: Run Tests and Coverage
+        run: python -m pytest --cov=app --cov-report=term-missing
+      
